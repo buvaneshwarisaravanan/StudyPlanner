@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome 👋"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study Planner"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan your studies and stay organized"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Subjects"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/addSubjectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="＋  Add Subject"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="18dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subjectRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:clipToPadding="false" />
+
+        <TextView
+            android:id="@+id/noSubjectsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No subjects added yet"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>

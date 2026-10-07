@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:id="@+id/subjectTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject Tasks"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A1A"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="18dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:id="@+id/noTasksText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No tasks added yet"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:padding="20dp" />
+
+</LinearLayout>
